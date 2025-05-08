@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "kGcVZa++Y0hHC8BlFj+gf7V2OAm53mYlzwFV47J0Du4=",
+  "Source": "MicroserviciosWeb",
+  "BasePath": "_content/MicroserviciosWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
