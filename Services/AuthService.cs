@@ -60,6 +60,15 @@ namespace MicroserviciosWeb.Services
                         Message = "La cuenta de usuario está desactivada"
                     };
                 }
+                var loginHistory = new LoginHistory
+                {
+                    Username = user.Username,
+                    UserId = user.Id,
+                    FechaCreacion = DateTime.UtcNow
+                };
+
+                _context.LoginHistories.Add(loginHistory);
+                await _context.SaveChangesAsync();
 
                 // Generar token JWT
                 var token = _jwtHelper.GenerateJwtToken(user, user.Role?.Name ?? "Cliente");

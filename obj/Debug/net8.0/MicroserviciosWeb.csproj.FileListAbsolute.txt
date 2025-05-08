@@ -146,3 +146,4 @@ C:\Users\Admin\source\repos\MicroserviciosWeb\MicroserviciosWeb\obj\Debug\net8.0
 C:\Users\Admin\source\repos\MicroserviciosWeb\MicroserviciosWeb\obj\Debug\net8.0\MicroserviciosWeb.pdb
 C:\Users\Admin\source\repos\MicroserviciosWeb\MicroserviciosWeb\obj\Debug\net8.0\MicroserviciosWeb.genruntimeconfig.cache
 C:\Users\Admin\source\repos\MicroserviciosWeb\MicroserviciosWeb\obj\Debug\net8.0\ref\MicroserviciosWeb.dll
+C:\Users\Admin\source\repos\MicroserviciosWeb\MicroserviciosWeb\obj\Debug\net8.0\MicroserviciosWeb.sourcelink.json

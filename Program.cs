@@ -40,7 +40,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// Configurar Swagger
+
+builder.Services.AddAuthorization();
+
+builder.Services.AddScoped<UserService>(); 
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -49,7 +53,6 @@ builder.Services.AddSwaggerGen(c =>
         Version = "v1",
         Description = "API para gestión de usuarios con roles"
     });
-
     // Configuración para JWT en Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
@@ -59,7 +62,6 @@ builder.Services.AddSwaggerGen(c =>
         Type = SecuritySchemeType.ApiKey,
         Scheme = "Bearer"
     });
-
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -101,7 +103,6 @@ app.UseHttpsRedirection();
 // Habilitar CORS
 app.UseCors("AllowAll");
 
-// Importante: Primero Authentication, luego Authorization
 app.UseAuthentication();
 app.UseAuthorization();
 
